@@ -1,5 +1,7 @@
 # Data
 /data/
+image_generation/raw/
+image_generation/processed/
 
 # Mac OS-specific storage files
 .DS_Store
