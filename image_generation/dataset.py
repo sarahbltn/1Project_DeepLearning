@@ -22,7 +22,6 @@ def preprocess_images(input_dir, output_dir, size=(64, 64)):
 
                 img = Image.open(path_in).convert("RGB")
 
-                # Crop centrado para hacerla cuadrada
                 w, h = img.size
                 min_dim = min(w, h)
 
@@ -33,7 +32,6 @@ def preprocess_images(input_dir, output_dir, size=(64, 64)):
 
                 img = img.crop((left, top, right, bottom))
 
-                # Resize a 64x64
                 img = img.resize(size)
 
                 img.save(path_out, "JPEG")
