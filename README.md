@@ -139,8 +139,9 @@ $$
 $$
 
 $$
-\sigma = e^{0.5 \cdot \text{log\_var}}
+\sigma = e^{\frac{1}{2} \log \sigma^2}
 $$
+
 
 This enables gradient flow while sampling.
 
