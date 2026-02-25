@@ -59,7 +59,7 @@ Image generation from a t-shirt dataset using neural networks
 
 --------
 
-## ***Project Objective***
+## **Project Objective**
 
 The objective of this project is to design and train a Variational Autoencoder (VAE) capable of learning a latent representation of T-shirt images and generating new synthetic samples.
 
@@ -73,7 +73,7 @@ The model is trained on a custom dataset of T-shirt images and tries to:
 
 ---
 
-## ***Project Description***
+## **Project Description**
 
 This project implements a Convolutional Variational Autoencoder (VAE) using TensorFlow/Keras to model the distribution of T-shirt images.
 
@@ -100,7 +100,7 @@ The project was developed through **three main experiments**, progressively impr
 All experiments and implementations can be found in the **notebooks** directory.
 ---
 
-## ***Dataset Preprocessing***
+## **Dataset Preprocessing**
 
 Before training, all images were preprocessed to ensure consistency.
 
@@ -144,7 +144,7 @@ This ensures:
 
 ---
 
-## ***Variational Autoencoder Architecture***
+## **Variational Autoencoder Architecture**
 
 The model follows a Convolutional VAE structure composed of an encoder, a sampling layer, and a decoder.
 
@@ -169,7 +169,7 @@ Experiment 2 increases model capacity by:
 
 ---
 
-## ***Reparameterization Trick***
+## **Reparameterization Trick**
 
 To allow backpropagation through stochastic sampling:
 
@@ -206,7 +206,7 @@ This encourages a smoother and more structured latent representation.
 
 ---
 
-## ***Decoder***
+## **Decoder**
 
 The decoder performs the inverse operation of the encoder:
 
@@ -222,7 +222,7 @@ The decoder reconstructs images back to their original dimensions:
 
 ---
 
-## ***Loss Function***
+## **Loss Function**
 
 The VAE optimizes a combined loss:
 
@@ -246,7 +246,7 @@ Regularizes the latent space toward a standard normal distribution, enabling mea
 
 ---
 
-## ***Evaluation Strategy***
+## **Evaluation Strategy**
 
 The model is evaluated using:
 
