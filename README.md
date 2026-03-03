@@ -36,8 +36,7 @@ Image generation from a t-shirt dataset using neural networks
     │
     │
     ├── preprocessing.py              <- Scripts to preprocess the data
-
---------
+```
 
 ## **Project Objective**
 
@@ -51,7 +50,6 @@ The model is trained on a custom dataset of T-shirt images and tries to:
 - Analyze reconstruction quality using reconstruction metrics
 - Explore and validate the learned latent space
 
----
 
 ## **Project Description**
 
@@ -78,7 +76,6 @@ The project was developed through **three main experiments**, progressively impr
 - Increased visual variability and detail
 
 All experiments and implementations can be found in the **notebooks** directory.
----
 
 ## **Dataset Preprocessing**
 
@@ -147,7 +144,6 @@ Experiment 2 increases model capacity by:
 - Increasing latent dimensionality
 - Allowing richer feature representations.
 
----
 
 ## **Reparameterization Trick**
 
@@ -184,7 +180,6 @@ The β parameter controls the balance between:
 
 This encourages a smoother and more structured latent representation.
 
----
 
 ## **Decoder**
 
@@ -200,7 +195,6 @@ The decoder reconstructs images back to their original dimensions:
 - 64×64×3 (Experiment 1)
 - 128×128×3 (Experiment 2)
 
----
 
 ## **Loss Function**
 
@@ -224,7 +218,6 @@ This ensures reconstructed images remain visually similar to the originals.
 
 Regularizes the latent space toward a standard normal distribution, enabling meaningful sampling and image generation.
 
----
 
 ## **Evaluation Strategy**
 
@@ -236,5 +229,3 @@ The model is evaluated using:
 - Visualization of newly generated samples
 
 Latent space interpolation verifies that transitions between encoded images are smooth, indicating that the model learned a continuous and meaningful latent representation.
-
----
